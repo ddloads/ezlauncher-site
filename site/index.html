@@ -17,7 +17,7 @@
       <nav class="top-nav">
         <div class="nav-brand">
           <img class="nav-logo" src="/assets/ezlauncher-mark-256.png" alt="" />
-          <span class="nav-title">EZlauncher</span>
+          <a class="nav-title" href="/">EZlauncher</a>
         </div>
         <a
           class="btn btn-ghost"
@@ -38,6 +38,7 @@
           <div class="cta-row">
             <a class="btn btn-primary" id="primary-download" href="/download">Download latest</a>
             <a class="btn btn-secondary" href="#release-notes">Release notes</a>
+            <a class="btn btn-secondary" href="/versions">Old versions</a>
           </div>
           <ul class="quick-stats">
             <li><span>Version</span><strong id="version-pill">0.2.0</strong></li>
@@ -57,34 +58,6 @@
       </header>
 
       <main>
-        <section class="panel">
-          <div class="panel-head">
-            <span class="kicker">Download</span>
-            <h2>Latest installer</h2>
-          </div>
-          <div class="download-card">
-            <div>
-              <div class="artifact-name" id="artifact-name">EZlauncher Setup 0.2.0.exe</div>
-              <div class="artifact-meta">
-                <span id="artifact-version">Version 0.2.0</span>
-                <span>•</span>
-                <span id="artifact-size">135,213,880 bytes</span>
-              </div>
-            </div>
-            <a class="btn btn-primary" id="artifact-download" href="/download">Download</a>
-          </div>
-        </section>
-
-        <section class="panel" id="previous-versions">
-          <div class="panel-head">
-            <span class="kicker">History</span>
-            <h2>Previous versions</h2>
-          </div>
-          <div class="versions-list" id="versions-list">
-            <p class="muted">Loading versions&hellip;</p>
-          </div>
-        </section>
-
         <section class="panel" id="release-notes">
           <div class="panel-head">
             <span class="kicker">Release notes</span>
@@ -101,7 +74,6 @@
             </ul>
           </div>
         </section>
-
       </main>
 
       <footer class="site-footer">

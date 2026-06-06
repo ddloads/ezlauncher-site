@@ -135,6 +135,11 @@ app.get('/download/:version', async (req, res) => {
   }
 });
 
+// Versions page
+app.get('/versions', (req, res) => {
+  res.sendFile(path.join(STATIC_DIR, 'versions.html'));
+});
+
 // Static files
 app.use(express.static(STATIC_DIR));
 

@@ -7,7 +7,5 @@ services:
     restart: unless-stopped
     environment:
       - PORT=${PORT:-3000}
-      - GITHUB_REPO=${GITHUB_REPO:-ddloads/ezlauncher-site}
-      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
     ports:
       - "${PORT:-3000}:${PORT:-3000}"

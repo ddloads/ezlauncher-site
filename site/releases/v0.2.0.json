@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "releaseDate": "2026-06-06T16:00:00Z",
+  "platform": "windows-x64",
+  "fileName": "EZlauncher Setup 0.2.0.exe",
+  "size": 135213880,
+  "sha256": "54ee481c3ffa4893c69da6faab178a997f9f4121426edbb289f60690940f0f5b",
+  "sha512": "9dkiOQD5WCdwBVC2Ri8Ejosa55Dqbs7ZqIsEw1WldKeWwxLjbu8iyYncKGRNWYsTOcEEvWWckNCXOmRP0WONZw==",
+  "downloadUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.2.0/EZlauncher.Setup.0.2.0.exe",
+  "blockmapUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.2.0/EZlauncher.Setup.0.2.0.exe.blockmap",
+  "notes": [
+    "Fresh Windows NSIS installer build from the 0.2.0 codebase.",
+    "Published machine-readable update metadata for future automation.",
+    "Dark-mode landing page for direct distribution on ddsplayground.com."
+  ]
+}

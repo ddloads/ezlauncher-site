@@ -5,6 +5,10 @@ services:
       dockerfile: Dockerfile
     container_name: ezlauncher-site
     restart: unless-stopped
+    environment:
+      - PORT=${PORT:-3000}
+      - DOWNLOAD_URL=${DOWNLOAD_URL}
+      - BLOCKMAP_URL=${BLOCKMAP_URL}
     labels:
       - traefik.enable=true
       - traefik.constraint-label-stack=appwrite
@@ -17,7 +21,7 @@ services:
       - traefik.http.routers.ezlauncher-site-https.rule=Host(`ddsplayground.com`) || Host(`www.ddsplayground.com`)
       - traefik.http.routers.ezlauncher-site-https.tls=true
       - traefik.http.routers.ezlauncher-site-https.service=ezlauncher-site
-      - traefik.http.services.ezlauncher-site.loadbalancer.server.port=3000
+      - traefik.http.services.ezlauncher-site.loadbalancer.server.port=${PORT:-3000}
     networks:
       - gateway
 

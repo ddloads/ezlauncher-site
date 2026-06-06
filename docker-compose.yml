@@ -17,7 +17,7 @@ services:
       - traefik.http.routers.ezlauncher-site-https.rule=Host(`ddsplayground.com`) || Host(`www.ddsplayground.com`)
       - traefik.http.routers.ezlauncher-site-https.tls=true
       - traefik.http.routers.ezlauncher-site-https.service=ezlauncher-site
-      - traefik.http.services.ezlauncher-site.loadbalancer.server.port=80
+      - traefik.http.services.ezlauncher-site.loadbalancer.server.port=3000
     networks:
       - gateway
 

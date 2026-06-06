@@ -8,16 +8,16 @@ Static landing page and update metadata server for EZlauncher, serving `ddsplayg
 - **Technology Stack:**
   - **Web Server:** Node.js / Express.
   - **Frontend:** Vanilla HTML, CSS, and JavaScript.
-  - **Deployment:** Docker Compose, Traefik (gateway), Portainer (stack deployment).
+  - **Deployment:** Docker Compose, Portainer.
 - **Architecture:** A Node.js application serving static assets from `/site` and handling redirects for `/download`.
 
 ## Directory Structure
 
 - `/site`: Contains the static website assets.
-- `server.js`: Express server configuration (Port 3000).
+- `server.js`: Express server configuration.
 - `package.json`: Node.js dependencies.
 - `Dockerfile`: Builds the Node.js image.
-- `docker-compose.yml`: Deployment configuration with Traefik labels.
+- `docker-compose.yml`: Deployment configuration.
 
 ## Building and Running
 
@@ -26,7 +26,7 @@ Static landing page and update metadata server for EZlauncher, serving `ddsplayg
 npm install
 npm start
 ```
-The site will be available at `http://localhost:3000`.
+The site will be available at `http://localhost:3000` (or the PORT defined in `.env`).
 
 ### Docker Build
 ```powershell
@@ -37,7 +37,7 @@ docker build -t ezlauncher-site .
 The project is designed to be deployed as a stack in Portainer:
 1. Point Portainer to the GitHub repository.
 2. Use `docker-compose.yml` as the entry point.
-3. Ensure the `gateway` external network exists.
+3. Configure `PORT`, `DOWNLOAD_URL`, and `BLOCKMAP_URL` in the Environment Variables section.
 
 ## Development Conventions
 

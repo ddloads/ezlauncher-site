@@ -9,22 +9,5 @@ services:
       - PORT=${PORT:-3000}
       - DOWNLOAD_URL=${DOWNLOAD_URL}
       - BLOCKMAP_URL=${BLOCKMAP_URL}
-    labels:
-      - traefik.enable=true
-      - traefik.constraint-label-stack=appwrite
-      - traefik.docker.network=gateway
-      - traefik.http.routers.ezlauncher-site-http.entrypoints=appwrite_web
-      - traefik.http.routers.ezlauncher-site-http.rule=Host(`ddsplayground.com`) || Host(`www.ddsplayground.com`)
-      - traefik.http.routers.ezlauncher-site-http.middlewares=ezlauncher-site-redirect
-      - traefik.http.middlewares.ezlauncher-site-redirect.redirectscheme.scheme=https
-      - traefik.http.routers.ezlauncher-site-https.entrypoints=appwrite_websecure
-      - traefik.http.routers.ezlauncher-site-https.rule=Host(`ddsplayground.com`) || Host(`www.ddsplayground.com`)
-      - traefik.http.routers.ezlauncher-site-https.tls=true
-      - traefik.http.routers.ezlauncher-site-https.service=ezlauncher-site
-      - traefik.http.services.ezlauncher-site.loadbalancer.server.port=${PORT:-3000}
-    networks:
-      - gateway
-
-networks:
-  gateway:
-    external: true
+    ports:
+      - "${PORT:-3000}:${PORT:-3000}"

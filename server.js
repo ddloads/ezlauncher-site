@@ -15,9 +15,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// Trust proxy for deployment behind Traefik
-app.set('trust proxy', 1);
-
 // Redirects
 app.get('/download', (req, res) => {
   res.redirect(302, DOWNLOAD_URL);

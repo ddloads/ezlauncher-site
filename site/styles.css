@@ -163,14 +163,20 @@ main { display: flex; flex-direction: column; gap: 24px; }
 .versions-list { display: flex; flex-direction: column; }
 .version-row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 14px 0;
+  flex-direction: column;
+  padding: 16px 0;
   border-bottom: 1px solid var(--border);
 }
 .version-row:last-child { border-bottom: none; }
+.version-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 .version-info { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.version-actions { display: flex; align-items: center; gap: 8px; }
 .version-tag { font-weight: 700; font-size: 0.95rem; font-family: ui-monospace, "Cascadia Code", "Fira Code", monospace; }
 .version-badge {
   display: inline-flex; padding: 3px 8px; border-radius: 999px;
@@ -179,6 +185,51 @@ main { display: flex; flex-direction: column; gap: 24px; }
 }
 .version-date, .version-size { font-size: 0.88rem; color: var(--muted); }
 .btn-sm { min-height: 36px; padding: 0 14px; font-size: 0.88rem; border-radius: 10px; }
+
+/* Changelog toggle */
+.btn-changelog {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease;
+}
+.btn-changelog:hover { color: var(--text); border-color: rgba(255,255,255,0.25); }
+.changelog-chevron {
+  transition: transform .2s ease;
+  flex-shrink: 0;
+}
+.btn-changelog[aria-expanded="true"] .changelog-chevron { transform: rotate(180deg); }
+
+/* Changelog panel */
+.version-changelog {
+  margin-top: 12px;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.changelog-list {
+  margin: 0;
+  padding: 0 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.changelog-list li {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
 
 .small { font-size: 0.92rem; }
 .release-copy { color: var(--muted); line-height: 1.75; }

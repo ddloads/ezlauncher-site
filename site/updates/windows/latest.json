@@ -6,8 +6,8 @@
   "size": 135213880,
   "sha256": "54ee481c3ffa4893c69da6faab178a997f9f4121426edbb289f60690940f0f5b",
   "sha512": "9dkiOQD5WCdwBVC2Ri8Ejosa55Dqbs7ZqIsEw1WldKeWwxLjbu8iyYncKGRNWYsTOcEEvWWckNCXOmRP0WONZw==",
-  "blockmapUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.2.0/EZlauncher%20Setup%200.2.0.exe.blockmap",
-  "downloadUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.2.0/EZlauncher%20Setup%200.2.0.exe",
+  "blockmapUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.2.0/EZlauncher.Setup.0.2.0.exe.blockmap",
+  "downloadUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.2.0/EZlauncher.Setup.0.2.0.exe",
   "notes": [
     "Fresh Windows installer build for EZlauncher 0.2.0.",
     "Published release metadata endpoints for external download/update checks.",

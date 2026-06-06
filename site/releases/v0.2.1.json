@@ -1,0 +1,20 @@
+{
+  "version": "0.2.1",
+  "releaseDate": "2026-06-06T19:56:20Z",
+  "platform": "windows-x64",
+  "fileName": "EZlauncher Setup 0.2.1.exe",
+  "size": 136353930,
+  "sha256": "7438ec1f935ffcb2c9039a3024a42622beaccbf3546facc4e43495962ea11e93",
+  "sha512": "fgg9S2+KrTrJU3Z9UaeIhQY0JWp+/ZIYiQm8RhCgQxtQhzXku0MJ/xUH3QlzZr/pfGiEE2jIOFE6fB78pp1kSw==",
+  "downloadUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.2.1/EZlauncher.Setup.0.2.1.exe",
+  "blockmapUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.2.1/EZlauncher.Setup.0.2.1.exe.blockmap",
+  "notes": [
+    "Fix: CurseForge now always visible in Browse window (API key is bundled).",
+    "Bundled CurseForge API key — no longer required in settings.",
+    "Auto-updater: app checks for and installs updates automatically.",
+    "Close to tray option in application settings.",
+    "Last played timestamp now updates correctly on launch.",
+    "Version badge pill in sidebar.",
+    "Logo now loads correctly in installed build."
+  ]
+}

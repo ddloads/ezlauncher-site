@@ -14,22 +14,35 @@
   </head>
   <body>
     <div class="shell">
+      <nav class="top-nav">
+        <div class="nav-brand">
+          <img class="nav-logo" src="/assets/ezlauncher-mark-256.png" alt="" />
+          <span class="nav-title">EZlauncher</span>
+        </div>
+        <a
+          class="btn btn-ghost"
+          href="https://github.com/ddloads/ezlauncher-site/releases"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+      </nav>
+
       <header class="hero">
         <div class="hero-copy">
           <div class="eyebrow">Windows desktop launcher</div>
           <img class="wordmark" src="/assets/ezlauncher-wordmark-clean.png" alt="EZlauncher" />
-          <h1>A clean home for EZlauncher downloads and release updates.</h1>
+          <h1>Launch Minecraft your way.</h1>
           <p class="lede">
-            Grab the latest installer, verify the checksum, and keep an eye on new builds from one simple page.
+            A fast, modern Minecraft launcher with modpack discovery, instance management, and a polished desktop experience. Download the latest build below.
           </p>
           <div class="cta-row">
             <a class="btn btn-primary" id="primary-download" href="/download">Download latest</a>
-            <a class="btn btn-secondary" href="#release-notes">View release notes</a>
+            <a class="btn btn-secondary" href="#release-notes">Release notes</a>
           </div>
           <ul class="quick-stats">
-            <li><span>Current version</span><strong id="version-pill">0.2.0</strong></li>
+            <li><span>Version</span><strong id="version-pill">0.2.0</strong></li>
             <li><span>Platform</span><strong>Windows x64</strong></li>
-            <li><span>Package</span><strong id="size-pill">129 MB</strong></li>
+            <li><span>Size</span><strong id="size-pill">129 MB</strong></li>
           </ul>
         </div>
         <div class="hero-card">
@@ -72,11 +85,14 @@
           <article class="panel">
             <div class="panel-head">
               <span class="kicker">Integrity</span>
-              <h2>Checksum</h2>
+              <h2>SHA-256 Checksum</h2>
             </div>
-            <code class="checksum" id="checksum">54ee481c3ffa4893c69da6faab178a997f9f4121426edbb289f60690940f0f5b</code>
+            <div class="checksum-wrap">
+              <code class="checksum" id="checksum">54ee481c3ffa4893c69da6faab178a997f9f4121426edbb289f60690940f0f5b</code>
+              <button class="copy-btn" id="copy-checksum" title="Copy checksum to clipboard">Copy</button>
+            </div>
             <p class="muted small">
-              SHA-256 for the current installer. Verify it locally after download if you want an extra trust check.
+              Verify this checksum against the downloaded installer to confirm file integrity.
             </p>
           </article>
         </section>
@@ -100,17 +116,43 @@
 
         <section class="panel">
           <div class="panel-head">
-            <span class="kicker">API-ish endpoints</span>
+            <span class="kicker">Endpoints</span>
             <h2>Useful links</h2>
           </div>
           <div class="link-grid">
-            <a href="/download">/download</a>
-            <a href="/updates/windows/latest.json">/updates/windows/latest.json</a>
-            <a href="/updates/windows/latest.yml">/updates/windows/latest.yml</a>
-            <a href="https://github.com/ddloads/ezlauncher-site/releases/tag/v0.2.0">GitHub release</a>
+            <a class="endpoint-card" href="/download">
+              <span class="endpoint-path">/download</span>
+              <span class="endpoint-desc">Redirects to the latest installer on GitHub Releases</span>
+            </a>
+            <a class="endpoint-card" href="/updates/windows/latest.json">
+              <span class="endpoint-path">/updates/windows/latest.json</span>
+              <span class="endpoint-desc">Machine-readable release metadata (JSON)</span>
+            </a>
+            <a class="endpoint-card" href="/updates/windows/latest.yml">
+              <span class="endpoint-path">/updates/windows/latest.yml</span>
+              <span class="endpoint-desc">Electron auto-updater compatible metadata (YAML)</span>
+            </a>
+            <a
+              class="endpoint-card"
+              href="https://github.com/ddloads/ezlauncher-site/releases/tag/v0.2.0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="endpoint-path">GitHub release ↗</span>
+              <span class="endpoint-desc">Source release, assets, and full changelog</span>
+            </a>
           </div>
         </section>
       </main>
+
+      <footer class="site-footer">
+        <p>EZlauncher &copy; 2026</p>
+        <div class="footer-links">
+          <a href="/updates/windows/latest.json">latest.json</a>
+          <a href="/updates/windows/latest.yml">latest.yml</a>
+          <a href="https://github.com/ddloads/ezlauncher-site" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </footer>
     </div>
     <script src="/app.js" defer></script>
   </body>

@@ -105,6 +105,24 @@ app.get('/updates/windows/latest.yml', async (req, res) => {
   }
 });
 
+// Installer + blockmap — redirected to GitHub release assets (used by electron-updater).
+// electron-updater constructs the download URL as <base_url>/<filename_from_latest_yml>.
+// The filename in latest.yml may not exactly match the GitHub asset name (spaces vs dots),
+// so we redirect to the real asset URL regardless of what filename was requested.
+app.get('/updates/windows/:filename', async (req, res) => {
+  try {
+    const releases = await fetchReleases();
+    const latest = releases[0];
+    if (!latest) return res.status(404).send('No release found');
+    const url = req.params.filename.endsWith('.blockmap') ? latest.blockmapUrl : latest.downloadUrl;
+    if (!url) return res.status(404).send('Asset not found');
+    res.redirect(302, url);
+  } catch (e) {
+    console.error('Failed to redirect installer download:', e.message);
+    res.status(502).send('Failed to fetch installer');
+  }
+});
+
 // Download latest installer
 app.get('/download', async (req, res) => {
   try {

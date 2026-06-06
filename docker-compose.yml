@@ -1,0 +1,26 @@
+services:
+  ezlauncher-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ezlauncher-site
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.constraint-label-stack=appwrite
+      - traefik.docker.network=gateway
+      - traefik.http.routers.ezlauncher-site-http.entrypoints=appwrite_web
+      - traefik.http.routers.ezlauncher-site-http.rule=Host(`ddsplayground.com`) || Host(`www.ddsplayground.com`)
+      - traefik.http.routers.ezlauncher-site-http.middlewares=ezlauncher-site-redirect
+      - traefik.http.middlewares.ezlauncher-site-redirect.redirectscheme.scheme=https
+      - traefik.http.routers.ezlauncher-site-https.entrypoints=appwrite_websecure
+      - traefik.http.routers.ezlauncher-site-https.rule=Host(`ddsplayground.com`) || Host(`www.ddsplayground.com`)
+      - traefik.http.routers.ezlauncher-site-https.tls=true
+      - traefik.http.routers.ezlauncher-site-https.service=ezlauncher-site
+      - traefik.http.services.ezlauncher-site.loadbalancer.server.port=80
+    networks:
+      - gateway
+
+networks:
+  gateway:
+    external: true

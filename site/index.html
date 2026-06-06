@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0c" />
+    <title>EZlauncher</title>
+    <meta
+      name="description"
+      content="Download EZlauncher — a fast, modern Minecraft launcher with modpack discovery, instance management, and polished desktop UX."
+    />
+    <link rel="icon" type="image/png" href="/assets/ezlauncher-mark-256.png" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">Windows desktop launcher</div>
+          <img class="wordmark" src="/assets/ezlauncher-wordmark-clean.png" alt="EZlauncher" />
+          <h1>A clean home for EZlauncher downloads and release updates.</h1>
+          <p class="lede">
+            Grab the latest installer, verify the checksum, and keep an eye on new builds from one simple page.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" id="primary-download" href="/download">Download latest</a>
+            <a class="btn btn-secondary" href="#release-notes">View release notes</a>
+          </div>
+          <ul class="quick-stats">
+            <li><span>Current version</span><strong id="version-pill">0.2.0</strong></li>
+            <li><span>Platform</span><strong>Windows x64</strong></li>
+            <li><span>Package</span><strong id="size-pill">129 MB</strong></li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <div class="card-glow"></div>
+          <img class="mark" src="/assets/ezlauncher-mark.png" alt="EZlauncher logo" />
+          <div class="card-meta">
+            <span class="meta-label">Latest build</span>
+            <strong id="hero-version">v0.2.0</strong>
+            <span id="hero-date">Published 2026-06-06</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="grid two-up">
+          <article class="panel">
+            <div class="panel-head">
+              <span class="kicker">Download</span>
+              <h2>Latest installer</h2>
+            </div>
+            <div class="download-card">
+              <div>
+                <div class="artifact-name" id="artifact-name">EZlauncher Setup 0.2.0.exe</div>
+                <div class="artifact-meta">
+                  <span id="artifact-version">Version 0.2.0</span>
+                  <span>•</span>
+                  <span id="artifact-size">135,213,880 bytes</span>
+                </div>
+              </div>
+              <a class="btn btn-primary" id="artifact-download" href="/download">Download .exe</a>
+            </div>
+            <p class="muted">
+              Need the raw update metadata? Use
+              <a href="/updates/windows/latest.json">latest.json</a>
+              or
+              <a href="/updates/windows/latest.yml">latest.yml</a>.
+            </p>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <span class="kicker">Integrity</span>
+              <h2>Checksum</h2>
+            </div>
+            <code class="checksum" id="checksum">54ee481c3ffa4893c69da6faab178a997f9f4121426edbb289f60690940f0f5b</code>
+            <p class="muted small">
+              SHA-256 for the current installer. Verify it locally after download if you want an extra trust check.
+            </p>
+          </article>
+        </section>
+
+        <section class="panel" id="release-notes">
+          <div class="panel-head">
+            <span class="kicker">Release notes</span>
+            <h2>EZlauncher 0.2.0</h2>
+          </div>
+          <div class="release-copy">
+            <p>
+              This release packages the current production-ready EZlauncher desktop build and exposes stable metadata for web downloads.
+            </p>
+            <ul>
+              <li>Fresh Windows NSIS installer build from the 0.2.0 codebase.</li>
+              <li>Published machine-readable update metadata for future automation.</li>
+              <li>Dark-mode landing page for direct distribution on ddsplayground.com.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <span class="kicker">API-ish endpoints</span>
+            <h2>Useful links</h2>
+          </div>
+          <div class="link-grid">
+            <a href="/download">/download</a>
+            <a href="/updates/windows/latest.json">/updates/windows/latest.json</a>
+            <a href="/updates/windows/latest.yml">/updates/windows/latest.yml</a>
+            <a href="https://github.com/ddloads/ezlauncher-site/releases/tag/v0.2.0">GitHub release</a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

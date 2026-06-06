@@ -140,7 +140,6 @@ body { padding: 0 18px 64px; }
 
 /* Main layout */
 main { display: flex; flex-direction: column; gap: 24px; }
-.grid.two-up { display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; }
 .panel { padding: 28px; transition: border-color .2s ease; }
 .panel:hover { border-color: rgba(255, 255, 255, 0.2); }
 .panel-head { margin-bottom: 18px; }
@@ -155,66 +154,10 @@ main { display: flex; flex-direction: column; gap: 24px; }
 .artifact-name { font-size: 1.05rem; font-weight: 700; }
 .artifact-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
 
-/* Checksum */
-.checksum-wrap { position: relative; margin-bottom: 14px; }
-.checksum {
-  display: block;
-  width: 100%;
-  overflow-wrap: anywhere;
-  padding: 16px 64px 16px 16px;
-  border-radius: 16px;
-  background: #0f1115;
-  border: 1px solid var(--border);
-  color: #d8ffb0;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-.copy-btn {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  transform: translateY(-50%);
-  background: rgba(126, 211, 33, 0.1);
-  border: 1px solid rgba(126, 211, 33, 0.28);
-  color: var(--accent);
-  border-radius: 8px;
-  padding: 6px 12px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  cursor: pointer;
-  font-family: inherit;
-  transition: background .15s ease, border-color .15s ease, color .15s ease;
-}
-.copy-btn:hover { background: rgba(126, 211, 33, 0.2); border-color: rgba(126, 211, 33, 0.5); }
-.copy-btn.copied { color: #081106; background: var(--accent); border-color: var(--accent); }
-
 .small { font-size: 0.92rem; }
 .release-copy { color: var(--muted); line-height: 1.75; }
 .release-copy ul { margin: 12px 0 0 20px; }
 .release-copy li { margin-bottom: 6px; }
-
-/* Endpoint cards */
-.link-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-.endpoint-card {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  color: var(--text);
-  text-decoration: none;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 16px 18px;
-  background: rgba(255, 255, 255, 0.02);
-  transition: border-color .15s ease, background .15s ease;
-}
-.endpoint-card:hover { border-color: rgba(126, 211, 33, 0.45); background: rgba(126, 211, 33, 0.04); }
-.endpoint-path {
-  font-family: ui-monospace, "Cascadia Code", "Fira Code", monospace;
-  font-size: 0.88rem;
-  color: #bfe88e;
-  font-weight: 600;
-}
-.endpoint-desc { font-size: 0.85rem; color: var(--muted); }
 
 /* Footer */
 .site-footer {

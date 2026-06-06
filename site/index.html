@@ -57,44 +57,22 @@
       </header>
 
       <main>
-        <section class="grid two-up">
-          <article class="panel">
-            <div class="panel-head">
-              <span class="kicker">Download</span>
-              <h2>Latest installer</h2>
-            </div>
-            <div class="download-card">
-              <div>
-                <div class="artifact-name" id="artifact-name">EZlauncher Setup 0.2.0.exe</div>
-                <div class="artifact-meta">
-                  <span id="artifact-version">Version 0.2.0</span>
-                  <span>•</span>
-                  <span id="artifact-size">135,213,880 bytes</span>
-                </div>
+        <section class="panel">
+          <div class="panel-head">
+            <span class="kicker">Download</span>
+            <h2>Latest installer</h2>
+          </div>
+          <div class="download-card">
+            <div>
+              <div class="artifact-name" id="artifact-name">EZlauncher Setup 0.2.0.exe</div>
+              <div class="artifact-meta">
+                <span id="artifact-version">Version 0.2.0</span>
+                <span>•</span>
+                <span id="artifact-size">135,213,880 bytes</span>
               </div>
-              <a class="btn btn-primary" id="artifact-download" href="/download">Download .exe</a>
             </div>
-            <p class="muted">
-              Need the raw update metadata? Use
-              <a href="/updates/windows/latest.json">latest.json</a>
-              or
-              <a href="/updates/windows/latest.yml">latest.yml</a>.
-            </p>
-          </article>
-
-          <article class="panel">
-            <div class="panel-head">
-              <span class="kicker">Integrity</span>
-              <h2>SHA-256 Checksum</h2>
-            </div>
-            <div class="checksum-wrap">
-              <code class="checksum" id="checksum">54ee481c3ffa4893c69da6faab178a997f9f4121426edbb289f60690940f0f5b</code>
-              <button class="copy-btn" id="copy-checksum" title="Copy checksum to clipboard">Copy</button>
-            </div>
-            <p class="muted small">
-              Verify this checksum against the downloaded installer to confirm file integrity.
-            </p>
-          </article>
+            <a class="btn btn-primary" id="artifact-download" href="/download">Download .exe</a>
+          </div>
         </section>
 
         <section class="panel" id="release-notes">
@@ -114,35 +92,6 @@
           </div>
         </section>
 
-        <section class="panel">
-          <div class="panel-head">
-            <span class="kicker">Endpoints</span>
-            <h2>Useful links</h2>
-          </div>
-          <div class="link-grid">
-            <a class="endpoint-card" href="/download">
-              <span class="endpoint-path">/download</span>
-              <span class="endpoint-desc">Redirects to the latest installer on GitHub Releases</span>
-            </a>
-            <a class="endpoint-card" href="/updates/windows/latest.json">
-              <span class="endpoint-path">/updates/windows/latest.json</span>
-              <span class="endpoint-desc">Machine-readable release metadata (JSON)</span>
-            </a>
-            <a class="endpoint-card" href="/updates/windows/latest.yml">
-              <span class="endpoint-path">/updates/windows/latest.yml</span>
-              <span class="endpoint-desc">Electron auto-updater compatible metadata (YAML)</span>
-            </a>
-            <a
-              class="endpoint-card"
-              href="https://github.com/ddloads/ezlauncher-site/releases/tag/v0.2.0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="endpoint-path">GitHub release ↗</span>
-              <span class="endpoint-desc">Source release, assets, and full changelog</span>
-            </a>
-          </div>
-        </section>
       </main>
 
       <footer class="site-footer">

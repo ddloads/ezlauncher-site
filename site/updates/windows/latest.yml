@@ -1,8 +1,8 @@
-version: 0.3.4
+version: 0.3.5
 files:
-  - url: EZlauncher Setup 0.3.4.exe
-    sha512: ulOxPEQ4gKMbwWHxrhYtbjyy04Jv+KLx4eZDOrG13NJ7SjE6Yy0QFvZiiNxROb7QlswbMlQ5qf8MRByoi6TrIw==
-    size: 138865120
-path: EZlauncher Setup 0.3.4.exe
-sha512: ulOxPEQ4gKMbwWHxrhYtbjyy04Jv+KLx4eZDOrG13NJ7SjE6Yy0QFvZiiNxROb7QlswbMlQ5qf8MRByoi6TrIw==
-releaseDate: '2026-06-06T23:12:33.363Z'
+  - url: EZlauncher Setup 0.3.5.exe
+    sha512: eg9AsGFPAXF/hiYcg4AeQNzmjZb5LxSuOiBhjJ7tBgSdvEe2dJympEBaso5MP6F8WrxHpZW24cTXiIPOambwdg==
+    size: 139365950
+path: EZlauncher Setup 0.3.5.exe
+sha512: eg9AsGFPAXF/hiYcg4AeQNzmjZb5LxSuOiBhjJ7tBgSdvEe2dJympEBaso5MP6F8WrxHpZW24cTXiIPOambwdg==
+releaseDate: '2026-06-07T01:19:49.653Z'

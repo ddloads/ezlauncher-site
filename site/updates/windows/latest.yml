@@ -1,8 +1,8 @@
-version: 0.3.6
+version: 0.3.11
+releaseDate: '2026-07-25T00:00:00.000Z'
+path: https://github.com/ddloads/ezlauncher-site/releases/download/v0.3.11/EZlauncher.Setup.0.3.11.exe
+sha512: Ze/t4tuYdzDkeLnJ2SxMrrFFADtzxslwlii9J5UH+7abda8mm5s6Re/fC/YmNfQi8e5/wB8A37Cat4BE7hr1ww==
 files:
-  - url: EZlauncher Setup 0.3.6.exe
-    sha512: FRSal1m+sTqsxzQwmXTwwtldWm/0lG9EQeCqJ9Oz/htPiUyh7xSUIlp+0Y646CIaxgm+w+payXeN40/UHKnfgg==
-    size: 140302549
-path: EZlauncher Setup 0.3.6.exe
-sha512: FRSal1m+sTqsxzQwmXTwwtldWm/0lG9EQeCqJ9Oz/htPiUyh7xSUIlp+0Y646CIaxgm+w+payXeN40/UHKnfgg==
-releaseDate: '2026-06-09T06:51:52.525Z'
+  - url: https://github.com/ddloads/ezlauncher-site/releases/download/v0.3.11/EZlauncher.Setup.0.3.11.exe
+    sha512: Ze/t4tuYdzDkeLnJ2SxMrrFFADtzxslwlii9J5UH+7abda8mm5s6Re/fC/YmNfQi8e5/wB8A37Cat4BE7hr1ww==
+    size: 142633474

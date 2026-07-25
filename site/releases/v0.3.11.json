@@ -6,8 +6,8 @@
   "size": 142633474,
   "sha256": "c23a26184c7cffc06b70c908ed5e479d21d94defa5aa904f9369b48e5bd98c29",
   "sha512": "Ze/t4tuYdzDkeLnJ2SxMrrFFADtzxslwlii9J5UH+7abda8mm5s6Re/fC/YmNfQi8e5/wB8A37Cat4BE7hr1ww==",
-  "blockmapUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.3.11/EZlauncher.Setup.0.3.11.exe.blockmap",
   "downloadUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.3.11/EZlauncher.Setup.0.3.11.exe",
+  "blockmapUrl": "https://github.com/ddloads/ezlauncher-site/releases/download/v0.3.11/EZlauncher.Setup.0.3.11.exe.blockmap",
   "notes": [
     "Improved Minecraft process and launch failure reporting.",
     "ATM11 launch failures now remain visible in launch history and Logs."
